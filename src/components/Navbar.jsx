@@ -11,7 +11,7 @@ export default function Navbar() {
   };
 
   return (
-    <nav className=" py-3 font-libre">
+    <nav className=" text-black relative  py-3 font-libre">
       <div className="px-1  md:px-10 flex items-center justify-between">
         <Link to="/" className="flex items-center gap-x-1">
           <img
@@ -19,9 +19,9 @@ export default function Navbar() {
             alt="Company logo"
             className="w-12 h-12 md:w-10 md:h-10 lg:w-14 lg:h-14"
           />
-          <h1 className="text-lg lg:text-xl">FundCraft</h1>
+          <h1 className="text-lg lg:text-xl font-[700]">FundCraft</h1>
         </Link>
-        <div className="hidden  md:flex lg:flex items-center space-x-12 mr-28 text-lg ">
+        <div className="hidden font-[700]  md:flex lg:flex items-center space-x-12 mr-28 text-lg ">
           <Link to="/aboutus">About</Link>
           <Link to="/login">Login</Link>
         </div>
@@ -57,11 +57,11 @@ export default function Navbar() {
           </div>
         )}
         <div className="hidden md:block lg:block">
-          <Button />
+          <Button text="Sign Up" url="/signup" variant="py-3 px-3" />
         </div>
       </div>
       {drop && (
-        <div className="flex flex-col space-y-4 pt-3 pl-2 text-center">
+        <div className=" p-7 right-3 max-h-min flex flex-col space-y-6 pt-3 pl-2 text-center text-4xl">
           <Link to="/aboutus">About</Link>
           <Link to="/login">Login</Link>
         </div>

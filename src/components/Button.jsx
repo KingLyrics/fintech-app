@@ -1,7 +1,12 @@
-export default function Button() {
+/* eslint-disable react/prop-types */
+import { Link } from "react-router-dom";
+export default function Button({ text, url, variant }) {
   return (
-    <button className="bg-purple rounded-full py-2 px-3 font-[700] text-white">
-      Sign Up
-    </button>
+    <Link
+      to={url}
+      className={` ${variant} bg-purple rounded-full  font-[700] text-white`}
+    >
+      {text}
+    </Link>
   );
 }
