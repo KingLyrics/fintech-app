@@ -10,6 +10,7 @@ export default {
     fontFamily: {
       font1: ["inter", "sans-serif"],
       libre: ["Libre Baskerville ", "serif"],
+      nanum: ["Nanum Gothic", "sans-serif"],
     },
   },
   plugins: [],
